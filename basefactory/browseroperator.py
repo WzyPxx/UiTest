@@ -133,4 +133,38 @@ class WebdriverOperator(object):
             秒后，不管加载成功与否都执行下一行代码，如果2秒有加载完，那么不必等5秒，直接执行下一行代码
             切记，隐式等待只需要初始化浏览器调用一次，后面的代码都会隐式等待。
             """
-
+    def web_element_wait(self,**kwargs):
+        """
+            显示等待
+            :return:
+            """
+        try:
+            type = kwargs['type']  # 定位类型
+            locator = kwargs['locator']  # 定位参数
+        except KeyError:
+            return False, '未传需要等待元素的定位参数'
+        # 传入时间，如果没传，默认等待30秒
+        try:
+            s = kwargs['time']
+            if s is None:
+                s = 30
+        except KeyError:
+            s = 30
+        # 每0.5秒轮寻一次属性id为locator的元素是否可见，可见就跳出等待，返回等等元素出现成功；超过s秒便等待失败，返回元素等待出现失败，截图等信息
+        try:
+            if type == 'id':
+                WebDriverWait(self.driver, s, 0.5).until(EC.visibility_of_element_located((By.ID, locator)))
+            elif type == 'name':
+                WebDriverWait(self.driver, s, 0.5).until(EC.visibility_of_element_located((By.NAME, locator)))
+            elif type == 'class':
+                WebDriverWait(self.driver, s, 0.5).until(EC.visibility_of_element_located((By.CLASS_NAME, locator)))
+            elif type == 'xpath':
+                WebDriverWait(self.driver, s, 0.5).until(EC.visibility_of_element_located((By.XPATH, locator)))
+            elif type == 'css':
+                WebDriverWait(self.driver, s, 0.5).until(EC.visibility_of_element_located((By.CSS_SELECTOR, locator)))
+            else:
+                return False, '不能识别元素类型[' + type + ']'
+        except TimeoutException:
+            screenshot_path = self.get_screenshot_as_file()
+            return False, '元素[' + locator + ']等待出现失败,已截图[' + screenshot_path + '].'
+        return True, '元素[' + locator + ']等待出现成功'
