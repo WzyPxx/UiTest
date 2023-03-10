@@ -1,15 +1,17 @@
-import time
-import os
+import time  # 处理等待、隐式、显示等待
+import os  # 用来处理截图保存的路径
 import win32con
 import win32gui
+from selenium.webdriver import Chrome
 from selenium import webdriver  #通过html属性得到元素，进而操作元素的方法属性
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from common.getconf import Config
-from common.getfiledir import BASEFACTORYDIR
-
-
-
+from common.getfiledir import BASEFACTORYDIR, SCREENSHOTDIR  # 截图路径
+from selenium.common.exceptions import NoSuchElementException, TimeoutException  # 前一个隐式等待的异常，后一个显示等的异常
+from selenium.webdriver import Chrome  # 用来声明driver是Chrome对象，方便driver联想出来方法
+from selenium.webdriver.support import expected_conditions as EC  # 判断元素的16种方法，显示等待用到
+from selenium.webdriver.support.ui import WebDriverWait  # 显示等待
+from selenium.webdriver.common.by import By  # 可以By.ID，By.NAME等来用来决定元素定位,显示等待中用
 
 class BrowserOperator(object):
         def __init__(self):
@@ -36,7 +38,7 @@ class BrowserOperator(object):
                     # #option.add_argument('disable-infobars')
                     # chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
                     # self.driver = webdriver.Chrome(options=chrome_options, executable_path=self.driver_path)
-                    self.driver = webdriver.Chrome(service =Service(self.driver_path))
+                    self.driver = webdriver.Chrome(service= Service(self.driver_path))
                     self.driver.maximize_window()
                     self.driver.get(url)
                 elif self.driver_type == 'IE':
@@ -95,42 +97,40 @@ class BrowserOperator(object):
             win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 点击打开按钮
             return True, '上传文件成功'
 
+# 需要浏览器driver对象，所以初始化这个对象为私有属性
+class WebdriverOperator(object):
+    def __init__(self, driver: Chrome):
+        self.driver = driver
 
+    def get_screenshot_as_file(self):
+        """
+            截屏保存
+            :return:返回路径
+            """
+        # 先初始化文件路径与文件名称，文件名使用时间戳命名，保存为png
+        pic_name = str.split(str(time.time()), '.')[0] + str.split(str(time.time()), '.')[1] + '.png'
+        screent_path = os.path.join(SCREENSHOTDIR, pic_name)
+        # 截屏代码，因为我们是截浏览器的屏，所以使用self.driver对象调用截屏方法，传入路径，它便会自动截屏保存在screent_path文件中，最后返回路径
+        self.driver.get_screenshot_as_file(screent_path)
+        return screent_path
+    def web_implicitly_wait(self,**kwargs):
+        """
+            隐式等待
+            :return:
+            type  存时间
+            """
+        try:
+            s = kwargs['time']
+        except KeyError:
+            s = 10
+        try:
+            self.driver.implicitly_wait(s)
+        except NoSuchElementException:
+            return False, '隐式等待设置失败!'
+        return True, '隐式等待设置成功'
+        """
+            里面的s是用例传过来的，调试时，只需要传指定time传一个数字，例：time = 5，每次页面刷新，程序将等待页面元素加载5秒，5
+            秒后，不管加载成功与否都执行下一行代码，如果2秒有加载完，那么不必等5秒，直接执行下一行代码
+            切记，隐式等待只需要初始化浏览器调用一次，后面的代码都会隐式等待。
+            """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-wd = BrowserOperator()
-isOK, deiver = wd.open_url(locator='https://www.baidu.com/')
-deiver.find_elements(by=By.XPATH, value='//*[@id="kw"]')[0].send_keys('飞人')
-deiver.find_elements(by=By.ID, value='su')[0].click()
-wd.close_browser()
