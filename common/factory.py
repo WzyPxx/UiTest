@@ -65,7 +65,7 @@ class Factory(object):
                 elif not isOK:
                     return isOK, result
                 list_rows = result[case_name]
-                cases[index: index + 1] = list_rows  # 将公共用例插入到执行用例中去
+                cases[index: index+1] = list_rows  # 将公共用例插入到执行用例中去
             index += 1
         if cases_len == index:
             return False, ''
