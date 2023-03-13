@@ -28,7 +28,7 @@ class BrowserOperator(object):
                 判断使用那个浏览器
             """
         try:
-            if self.driver_type == 'Chrome':
+            if self.driver_type == 'chrome':
                 # 处理chrom弹出的info
                 # chrome_options = webdriver.ChromeOptions()
                 # #option.add_argument('disable-infobars')
@@ -67,7 +67,7 @@ class BrowserOperator(object):
             button_name = kwargs['index']
         except KeyError:
             return False, '没传对话框的标记或没传文件路径'
-        if self.driver_type == 'Chrome':
+        if self.driver_type == 'chrome':
             title = '打开'
         elif self.driver_type == 'IE':
             title = '文件上传'

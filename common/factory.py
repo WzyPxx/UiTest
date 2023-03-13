@@ -11,11 +11,11 @@ class Factory(object):
         self.con = Config()
         self.con_fun = dict(self.con.items('Function'))
         """
-         浏览器操作对象
+        浏览器操作对象
         """
         self.browser_opr = BrowserOperator()
         """
-          网页操作对象
+        网页操作对象
         """
         self.webdriver_opr = None
 
@@ -23,7 +23,6 @@ class Factory(object):
         self.webdriver_opr = WebdriverOperator(driver)
 
     # 初始化执行用例
-
     def init_execute_case(self):
         print("----------初始化用例----------")
         xlsx = ReadCase()
@@ -34,7 +33,6 @@ class Factory(object):
             exit()
         all_cases = result
         excu_cases = []
-        print(all_cases)
         for cases_dict in all_cases:
             for key, cases in cases_dict.items():
                 isOK, result = self.init_common_case(cases)
@@ -74,6 +72,3 @@ class Factory(object):
         return True, cases
 
 
-fac = Factory()
-isOK, result = fac.init_execute_case()
-print(result)
