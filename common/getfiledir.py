@@ -1,6 +1,6 @@
 import os
 
-#获取本框架各目录的绝对路径
+# 获取本框架各目录的绝对路径
 dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DATADIR = os.path.join(dir, 'data')
