@@ -15,6 +15,7 @@ class ReadCase(object):
     def openxlsx(self, file):
         """
             打开文件
+            :param file:
             :param dir:
             :return:
             """
@@ -27,6 +28,8 @@ class ReadCase(object):
             """
         sheet_list = []
         for sh in self.sw:
+            # 读取所有可执行用例时规避掉公共用例，因为公共用例是要在所有可执行用例里调用的，公共用例不能自己单独运行
+            # 注意：公共用例不能调用自身,递归死循环
             if 'common' != sh.title.split('_')[0] and 'common' != sh.title.split('-')[0] and sh.title[0] != '#':
                 isOK, result = self.readcase(sh)
                 if isOK:
@@ -44,11 +47,11 @@ class ReadCase(object):
         # 参数传入一个sheet页对象，然后判空
         if sh is None:
             return False, '用例页参数未传'
-            # 通过列表保存sheet的每一行，判空
+        # 通过列表保存sheet的每一行，判空
         datas = list(sh.rows)
         if not datas:
             return False, '用例[' + sh.title + ']里面为空！'
-            # 得到第一行为title
+        # 得到第一行为title
         title = [i.value for i in datas[0]]
         rows = []
         sh_dict = {}
