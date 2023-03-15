@@ -68,3 +68,6 @@ class Opr_email(object):
         self.get_email_host_smtp()
         self.made_msg()
         self.smtp.send_message(self.msg, from_addr=self.from_addr, to_addrs=self.to_addr)
+        print('发送成功')
+ema = Opr_email().send_email()
+print(ema)
