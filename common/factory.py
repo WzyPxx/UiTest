@@ -43,7 +43,6 @@ class Factory(object):
                 else:
                     cases_dict[key] = cases
                 exc_cases.append(cases_dict)
-                print(exc_cases)
                 print("----------初始化用例完成----------")
         return isOK, exc_cases
 
@@ -119,6 +118,7 @@ class Factory(object):
             return isOK, result
         # 执行基础方法，如打网点页、点击、定位、隐式等待 等
         isOK, result = function(**kwargs)
+
         # 如果是打开网页，是浏览器初始化，需要将返回值传递给另一个基础类
         if '打开网页' == keyword and isOK:
             url = kwargs['locator']

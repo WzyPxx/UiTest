@@ -1,0 +1,33 @@
+2023-03-15 16:12:02,869 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-15 16:12:04,832 - Weizhengyu-INFO 网页[https://www.baidu.com]打开成功
+2023-03-15 16:12:05,044 - Weizhengyu-INFO 元素[//*[@id="lg"]/map/area]等待出现成功
+2023-03-15 16:12:06,126 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[乔丹]成功!
+2023-03-15 16:12:07,173 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[路飞]成功!
+2023-03-15 16:12:08,238 - Weizhengyu-INFO 元素[//*[@id="su"]]点击成功
+2023-03-15 16:12:14,048 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-15 16:12:14,048 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
+2023-03-15 16:14:06,279 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-15 16:14:08,442 - Weizhengyu-INFO 网页[https://www.baidu.com]打开成功
+2023-03-15 16:14:08,646 - Weizhengyu-INFO 元素[//*[@id="lg"]/map/area]等待出现成功
+2023-03-15 16:14:09,760 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[乔丹]成功!
+2023-03-15 16:14:10,804 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[路飞]成功!
+2023-03-15 16:14:11,866 - Weizhengyu-INFO 元素[//*[@id="su"]]点击成功
+2023-03-15 16:14:16,971 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-15 16:14:16,971 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
+2023-03-15 17:49:08,851 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-15 17:49:13,338 - Weizhengyu-INFO 网页[https://www.baidu.com]打开成功
+2023-03-15 17:49:13,365 - Weizhengyu-INFO 元素[//*[@id="lg"]/map/area]等待出现成功
+2023-03-15 17:49:14,451 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[乔丹]成功!
+2023-03-15 17:49:15,497 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[路飞]成功!
+2023-03-15 17:49:16,567 - Weizhengyu-INFO 元素[//*[@id="su"]]点击成功
+2023-03-15 17:49:21,757 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-15 17:49:21,757 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
