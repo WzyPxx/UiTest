@@ -1,5 +1,7 @@
 import time  # 处理等待、隐式、显示等待
 import os  # 用来处理截图保存的路径
+import ddddocr as ddddocr  # 识别验证码
+
 from common.getfiledir import SCREENSHOTDIR  # 截图路径
 from selenium.common.exceptions import NoSuchElementException, TimeoutException  # 前一个隐式等待的异常，后一个显示等的异常
 from selenium.webdriver import Chrome  # 用来声明driver是Chrome对象，方便driver联想出来方法
@@ -102,6 +104,19 @@ class WebdriverOperator(object):
         if not isOK:
             return isOK, result
         elem = result
+        # 识别验证码
+        if text == '验证码':
+            # 获取验证码，存储为本地图片
+            elems = self.driver.find_element(by=By.ID, value='chkimg')
+            # 将获取的图片命名
+            elems.screenshot('验证码.png')
+            # 通过ddddocr包识别验证码
+            ocr = ddddocr.DdddOcr(old=True)
+            with open("验证码.png", 'rb') as f:
+                image = f.read()
+            # 将识别后的验证码4位数存储进res变量
+            res = ocr.classification(image)
+            text = res
         try:
             elem.send_keys(text)
         except Exception:

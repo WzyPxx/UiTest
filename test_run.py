@@ -1,5 +1,6 @@
 import os  # 处理路径
 import unittest  # Loadcase的代码文件
+
 from library.HTMLTestRunnerNew import HTMLTestRunner  # 执行用例，输出报告
 from common.getfiledir import CASEDIR, REPORTDIR
 
@@ -16,7 +17,6 @@ class Test_run(object):
             description='测试用例执行情况',
             tester='位正雨'
         )
-
     def excute(self):
         self.runner.run(self.suit)
 

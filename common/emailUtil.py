@@ -5,6 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from common.getfiledir import REPORTDIR
+from common.log import mylog
 
 
 class Opr_email(object):
@@ -63,11 +64,10 @@ class Opr_email(object):
     def send_email(self):
         """
         发送邮件
+
         :return:
         """
         self.get_email_host_smtp()
         self.made_msg()
         self.smtp.send_message(self.msg, from_addr=self.from_addr, to_addrs=self.to_addr)
-        print('发送成功')
-ema = Opr_email().send_email()
-print(ema)
+        mylog.info('\n邮件发送成功！')

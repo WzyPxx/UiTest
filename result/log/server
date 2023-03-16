@@ -31,3 +31,119 @@
 2023-03-15 17:49:21,757 - Weizhengyu-INFO 
 ----------用例【baidu】结束----------
 
+2023-03-16 10:18:27,222 - Weizhengyu-INFO 
+邮件发送成功！
+2023-03-16 10:18:27,222 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 10:18:31,677 - Weizhengyu-INFO 网页[https://www.baidu.com]打开成功
+2023-03-16 10:18:31,864 - Weizhengyu-INFO 元素[//*[@id="lg"]/map/area]等待出现成功
+2023-03-16 10:18:32,950 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[乔丹]成功!
+2023-03-16 10:18:33,980 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[路飞]成功!
+2023-03-16 10:18:35,046 - Weizhengyu-INFO 元素[//*[@id="su"]]点击成功
+2023-03-16 10:18:40,259 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 10:18:40,259 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
+2023-03-16 10:19:42,018 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 10:19:45,898 - Weizhengyu-INFO 网页[https://www.baidu.com]打开成功
+2023-03-16 10:19:45,925 - Weizhengyu-INFO 元素[//*[@id="lg"]/map/area]等待出现成功
+2023-03-16 10:19:46,998 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[乔丹]成功!
+2023-03-16 10:19:48,032 - Weizhengyu-INFO 元素[//*[@id="kw"]]输入[路飞]成功!
+2023-03-16 10:19:49,096 - Weizhengyu-INFO 元素[//*[@id="su"]]点击成功
+2023-03-16 10:19:55,486 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 10:19:55,486 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
+2023-03-16 10:19:58,501 - Weizhengyu-INFO 
+邮件发送成功！
+2023-03-16 10:28:20,601 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 10:28:22,296 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 10:28:23,357 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 10:28:24,424 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 10:28:25,490 - Weizhengyu-INFO 元素[verifyCode]输入[1234]成功!
+2023-03-16 10:28:26,552 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-16 10:28:31,750 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 10:28:31,750 - Weizhengyu-INFO 
+----------用例【baidu】结束----------
+
+2023-03-16 10:28:40,451 - Weizhengyu-INFO 
+邮件发送成功！
+2023-03-16 11:24:05,233 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 11:24:07,354 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 11:24:08,424 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 11:24:09,496 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 11:24:10,576 - Weizhengyu-INFO 元素[verifyCode]输入[1234]成功!
+2023-03-16 11:24:11,639 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-16 11:24:16,880 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 11:24:16,880 - Weizhengyu-ERROR 未找到注册方法[send_email]所对应的执行函数，请检查配置文件
+2023-03-16 11:28:15,275 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 11:28:17,020 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 11:28:18,094 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 11:28:19,156 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 11:28:20,571 - Weizhengyu-INFO 元素[verifyCode]输入[请输入验证码]成功!
+2023-03-16 11:28:21,651 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-16 11:28:26,843 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 11:30:40,053 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 11:30:41,725 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 11:30:42,804 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 11:30:43,872 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 11:30:45,515 - Weizhengyu-ERROR 元素[chkimg]输入[nyxb]失败,已截图[C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\result\screenshot\16789374452212424.png].
+2023-03-16 14:59:35,360 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 14:59:37,067 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 14:59:38,148 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 14:59:39,218 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:00:41,367 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:00:43,076 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:00:57,451 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:01:19,150 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:05:08,584 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:05:12,803 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:05:14,149 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:05:15,284 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:07:13,771 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:07:15,650 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:07:16,711 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:07:17,769 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:07:58,661 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:08:00,602 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:08:01,666 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:08:02,735 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:08:05,196 - Weizhengyu-INFO 元素[verifyCode]输入[请输入验证码]成功!
+2023-03-16 15:08:06,297 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-16 15:08:11,785 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-16 15:09:23,677 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:09:25,281 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:09:26,344 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:09:27,418 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:09:29,115 - Weizhengyu-ERROR 元素[verifyCode]输入[ye86c]失败,已截图[C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\result\screenshot\1678950568856229.png].
+2023-03-16 15:09:55,795 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:09:57,467 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:09:58,538 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:09:59,597 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:10:01,309 - Weizhengyu-ERROR 元素[verifyCode]输入[2dnc]失败,已截图[C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\result\screenshot\16789506010194242.png].
+2023-03-16 15:11:05,073 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:11:06,746 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:11:07,811 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:11:08,878 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:11:10,521 - Weizhengyu-ERROR 元素[//*[@id="verifyCode"]]输入[n36f]失败,已截图[C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\result\screenshot\16789506702446327.png].
+2023-03-16 15:18:06,933 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-16 15:18:08,485 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-16 15:18:09,542 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-16 15:18:10,623 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-16 15:18:12,019 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[aye7]成功!
+2023-03-16 15:18:13,076 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-16 15:18:18,264 - Weizhengyu-INFO 关闭浏览器成功

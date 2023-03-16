@@ -2,6 +2,7 @@ from common.getconf import Config  # 配置文件读取
 from common.getcase import ReadCase  # 初始化用例
 from basefactory.browseroperator import BrowserOperator
 from basefactory.webdriverOperator import WebdriverOperator  # 执行用例
+from common.emailUtil import Opr_email
 
 
 # 初始化工厂类
@@ -17,7 +18,7 @@ class Factory(object):
         网页操作对象
         """
         self.webdriver_opr = None
-
+        self.email_opr = Opr_email()
     def init_webdriver_opr(self, driver):
         self.webdriver_opr = WebdriverOperator(driver)
 
@@ -87,7 +88,10 @@ class Factory(object):
             try:
                 function = getattr(self.webdriver_opr, function_name)
             except Exception:
-                return False, '未找到注册方法[' + function_name + ']所对应的执行函数，请检查配置文件'
+                try:
+                    function = getattr(self.email_opr, function_name)
+                except Exception:
+                    return False, '未找到注册方法[' + function_name + ']所对应的执行函数，请检查配置文件'
         return True, function
 
     def execute_keyword(self, **kwargs):

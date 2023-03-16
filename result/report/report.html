@@ -212,14 +212,14 @@ table       { font-size: 100%; }
                 innerSize: '80%',
                 name: '比例',
                 data: [
-                    ['通过', 1],
+                    ['通过', 0],
                     {
                         name: '失败',
                         y: 0,
                         sliced: true,
                         selected: true
                     },
-                    ['错误', 0]
+                    ['错误', 1]
                 ]
             }]
         }, function(c) {
@@ -347,11 +347,11 @@ function html_escape(s) {
 <div style="width: 650px; float: left;">
     <h1 style="font-family: Microsoft YaHei">BOS3.0测试</h1>
     <p class='attribute'><strong>测试人员 : </strong> 位正雨</p>
-<p class='attribute'><strong>开始时间 : </strong> 2023-03-15 17:49:08</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:12.906867</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 1，通过 1，通过率 = 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2023-03-16 15:18:06</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:11.334237</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 1，错误 1，通过率 = 0.00%</p>
 <p class='attribute'><strong>失败用例合集 : </strong> <ol style='float: left;'>无</ol></p>
-<p class='attribute'><strong>错误用例合集 : </strong> <ol style='float: left;'>无</ol></p>
+<p class='attribute'><strong>错误用例合集 : </strong> <div class='panel-default' style='float: left;'><a class='showDetail' data-toggle='collapse' href='#errorCaseOl' style='text-decoration: none;'>点击查看</a></div><ol id='errorCaseOl' class='collapse' style='float: left;'><li>test_run_1 (test_caserun.MyTesting)</li></ol></p>
 
     <p class='description'>测试用例执行情况</p>
 </div>
@@ -361,10 +361,10 @@ function html_escape(s) {
 
 <div style="width: 500px; clear: both;">
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-warning" href='javascript:showCase(3)'>错误{ 0 }</a>
+<a class="btn btn-warning" href='javascript:showCase(3)'>错误{ 1 }</a>
 <a class="btn btn-info" href='javascript:showCase(4)'>所有{ 1 }</a>
 </p>
 </div>
@@ -390,53 +390,65 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='passClass warning'>
+<tr class='errorClass warning'>
     <td>MyTesting</td>
     <td></td>
     <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
     <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">12.91秒</td>
+    <td class="text-center">11.34秒</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-    <tr id='pt1_1' class='hiddenRow'>
-        <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_run_1</div></td>
+    <tr id='et1_1' class='none'>
+        <td class='errorCase' style="vertical-align: middle"><div class='testcase'>test_run_1</div></td>
         <td style="vertical-align: middle"></td>
         <td colspan='5' align='center'>
         <!--默认收起错误信息 -Findyou
-        <button id='btn_pt1_1' type="button"  class="btn btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-        <div id='div_pt1_1' class="collapse">  -->
+        <button id='btn_et1_1' type="button"  class="btn btn-xs collapsed" data-toggle="collapse" data-target='#div_et1_1'>错误</button>
+        <div id='div_et1_1' class="collapse">  -->
         <!-- 默认展开错误信息 -Findyou /  修复失败按钮的颜色 -- Gelomen -->
-        <button id='btn_pt1_1' type="button"  class="btn btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-        <div id='div_pt1_1' class="collapse in">
+        <button id='btn_et1_1' type="button"  class="btn btn-xs" data-toggle="collapse" data-target='#div_et1_1'>错误</button>
+        <div id='div_et1_1' class="collapse in">
         <pre style="text-align:left">
         
-pt1_1: 
+et1_1: 
 
-网页[https://www.baidu.com]打开成功
-元素[//*[@id="lg"]/map/area]等待出现成功
-元素[//*[@id="kw"]]输入[乔丹]成功!
-元素[//*[@id="kw"]]输入[路飞]成功!
-元素[//*[@id="su"]]点击成功
+网页[http://124.70.177.195:8087]打开成功
+元素[login]输入[root]成功!
+元素[password]输入[bos31]成功!
+欢迎使用ddddocr，本项目专注带动行业内卷，个人博客:wenanzhe.com
+训练数据支持来源于:http://146.56.204.113:19199/preview
+爬虫框架feapder可快速一键接入，快速开启爬虫之旅：https://github.com/Boris-code/feapder
+谷歌reCaptcha验证码 / hCaptcha验证码 / funCaptcha验证码商业级识别接口：https://yescaptcha.com/i/NSwk7i
+元素[//*[@id="verifyCode"]]输入[aye7]成功!
+元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
 关闭浏览器成功
+Traceback (most recent call last):
+  File "C:\Users\lx\AppData\Local\JetBrains\PyCharmCE2021.2\demo\PyCharmLearningProject\venv\lib\site-packages\ddt.py", line 220, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\excutetest\test_caserun.py", line 18, in test_run
+    isOK, result = self.fac.execute_keyword(**case)
+  File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\common\factory.py", line 124, in execute_keyword
+    isOK, result = function(**kwargs)
+TypeError: send_email() got an unexpected keyword argument 'id'
 
 
         </pre>
         </div>
         </td>
-        <td class='passCase' style="vertical-align: middle"></td>
+        <td class='errorCase' style="vertical-align: middle"></td>
     </tr>
     
 <tr id='total_row' class="text-center active">
     <td colspan='2'>总计</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>12.91秒</td>
-    <td>通过率：100.00%</td>
+    <td>11.34秒</td>
+    <td>通过率：0.00%</td>
 </tr>
 </table>
 
