@@ -347,8 +347,8 @@ function html_escape(s) {
 <div style="width: 650px; float: left;">
     <h1 style="font-family: Microsoft YaHei">BOS3.0测试</h1>
     <p class='attribute'><strong>测试人员 : </strong> 位正雨</p>
-<p class='attribute'><strong>开始时间 : </strong> 2023-03-17 10:17:23</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:56.753553</p>
+<p class='attribute'><strong>开始时间 : </strong> 2023-03-17 18:04:52</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:05.992783</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 1，错误 1，通过率 = 0.00%</p>
 <p class='attribute'><strong>失败用例合集 : </strong> <ol style='float: left;'>无</ol></p>
 <p class='attribute'><strong>错误用例合集 : </strong> <div class='panel-default' style='float: left;'><a class='showDetail' data-toggle='collapse' href='#errorCaseOl' style='text-decoration: none;'>点击查看</a></div><ol id='errorCaseOl' class='collapse' style='float: left;'><li>test_run_1 (test_caserun.MyTesting)</li></ol></p>
@@ -397,7 +397,7 @@ function html_escape(s) {
     <td class="text-center">0</td>
     <td class="text-center">0</td>
     <td class="text-center">1</td>
-    <td class="text-center">32.84秒</td>
+    <td class="text-center">5.99秒</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
@@ -422,17 +422,18 @@ et1_1:
 训练数据支持来源于:http://146.56.204.113:19199/preview
 爬虫框架feapder可快速一键接入，快速开启爬虫之旅：https://github.com/Boris-code/feapder
 谷歌reCaptcha验证码 / hCaptcha验证码 / funCaptcha验证码商业级识别接口：https://yescaptcha.com/i/NSwk7i
-元素[//*[@id="verifyCode"]]输入[w4nc]成功!
+元素[//*[@id="verifyCode"]]输入[4aw4]成功!
 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
-关闭浏览器成功
 Traceback (most recent call last):
   File "C:\Users\lx\AppData\Local\JetBrains\PyCharmCE2021.2\demo\PyCharmLearningProject\venv\lib\site-packages\ddt.py", line 220, in wrapper
     return func(self, *args, **kwargs)
   File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\excutetest\test_caserun.py", line 18, in test_run
     isOK, result = self.fac.execute_keyword(**case)
-  File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\common\factory.py", line 124, in execute_keyword
+  File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\common\factory.py", line 121, in execute_keyword
     isOK, result = function(**kwargs)
-TypeError: send_email() got an unexpected keyword argument 'id'
+  File "C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\basefactory\webdriverOperator.py", line 79, in web_element_wait
+    return False, '不能识别元素类型[' + type + ']'
+TypeError: can only concatenate str (not "NoneType") to str
 
 
         </pre>
@@ -447,7 +448,7 @@ TypeError: send_email() got an unexpected keyword argument 'id'
     <td>0</td>
     <td>0</td>
     <td>1</td>
-    <td>32.84秒</td>
+    <td>5.99秒</td>
     <td>通过率：0.00%</td>
 </tr>
 </table>

@@ -171,3 +171,25 @@
 2023-03-17 10:17:28,757 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[w4nc]成功!
 2023-03-17 10:17:29,805 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
 2023-03-17 10:17:34,975 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-17 17:53:12,412 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 17:53:14,253 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 17:53:15,323 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 17:53:16,378 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 17:53:17,748 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[g65d]成功!
+2023-03-17 17:53:18,802 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-17 18:03:27,971 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 18:03:29,530 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 18:03:30,585 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 18:03:31,646 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 18:03:32,942 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[2yed]成功!
+2023-03-17 18:03:33,991 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-17 18:03:35,135 - Weizhengyu-ERROR 获取[xpath]元素[//*[@id="page-tab-183"]/a]失败,已截图[C:\Users\lx\Desktop\测试文档\自动化测试\UiTest\result\screenshot\16790474150033267.png].
+2023-03-17 18:04:52,772 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 18:04:54,292 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 18:04:55,356 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 18:04:56,416 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 18:04:57,700 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[4aw4]成功!
+2023-03-17 18:04:58,763 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
