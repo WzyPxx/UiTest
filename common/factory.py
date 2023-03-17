@@ -88,10 +88,7 @@ class Factory(object):
             try:
                 function = getattr(self.webdriver_opr, function_name)
             except Exception:
-                try:
-                    function = getattr(self.email_opr, function_name)
-                except Exception:
-                    return False, '未找到注册方法[' + function_name + ']所对应的执行函数，请检查配置文件'
+                return False, '未找到注册方法[' + function_name + ']所对应的执行函数，请检查配置文件'
         return True, function
 
     def execute_keyword(self, **kwargs):

@@ -147,3 +147,27 @@
 2023-03-16 15:18:12,019 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[aye7]成功!
 2023-03-16 15:18:13,076 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
 2023-03-16 15:18:18,264 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-17 10:07:14,091 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 10:07:16,011 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 10:07:17,078 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 10:07:18,142 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 10:07:19,502 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[8fn3]成功!
+2023-03-17 10:07:20,553 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-17 10:07:25,726 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-17 10:14:48,356 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 10:14:49,876 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 10:14:50,930 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 10:14:52,007 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 10:14:53,280 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[fx5y]成功!
+2023-03-17 10:14:54,329 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-17 10:14:59,515 - Weizhengyu-INFO 关闭浏览器成功
+2023-03-17 10:17:23,789 - Weizhengyu-INFO 
+----------用例【baidu】开始----------
+2023-03-17 10:17:25,347 - Weizhengyu-INFO 网页[http://124.70.177.195:8087]打开成功
+2023-03-17 10:17:26,403 - Weizhengyu-INFO 元素[login]输入[root]成功!
+2023-03-17 10:17:27,476 - Weizhengyu-INFO 元素[password]输入[bos31]成功!
+2023-03-17 10:17:28,757 - Weizhengyu-INFO 元素[//*[@id="verifyCode"]]输入[w4nc]成功!
+2023-03-17 10:17:29,805 - Weizhengyu-INFO 元素[/html/body/div[2]/div/div[2]/form[1]/a]点击成功
+2023-03-17 10:17:34,975 - Weizhengyu-INFO 关闭浏览器成功
