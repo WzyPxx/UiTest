@@ -71,3 +71,4 @@ class Opr_email(object):
         self.made_msg()
         self.smtp.send_message(self.msg, from_addr=self.from_addr, to_addrs=self.to_addr)
         mylog.info('\n邮件发送成功！')
+        return '发送邮件成功'

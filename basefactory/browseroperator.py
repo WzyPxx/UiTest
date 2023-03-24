@@ -37,6 +37,7 @@ class BrowserOperator(object):
                 self.driver = webdriver.Chrome(service=Service(self.driver_path))
                 self.driver.maximize_window()
                 self.driver.get(url)
+
             elif self.driver_type == 'IE':
                 print('IE 浏览器')
             else:
@@ -44,6 +45,17 @@ class BrowserOperator(object):
         except Exception as e:
             return False, e
         return True, self.driver
+
+    def open_iframe(self, **kwargs):
+        try:
+            url = kwargs['locator']
+        except KeyError:
+            return False, '没有iframe参数！'
+        try:
+            self.driver.switch_to.frame(url)
+        except Exception as e:
+            return False, e
+        return True, 'iframe页面定位成功'
 
     def close_browser(self, **kwargs):
         """
